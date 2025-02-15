@@ -2,14 +2,13 @@ package exceptionhandling.uncheckedexception;
 
 
 public class UncheckedException {
-    public static int uncheckedExpection(int a,int b){
+    public static int uncheckedExpection(int a,int b) throws ArithmeticException {
         int ans=0;
-           try{
+
+               if(b==0)throw new ArithmeticException("Divide by zero not allowed");
                ans=a/b;
                System.out.println(ans);
-           }catch(ArithmeticException e){
-               System.out.println(e.getMessage());
-           }
+
 return ans;
     }
 }

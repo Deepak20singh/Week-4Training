@@ -18,6 +18,8 @@ public class UncheckedExceptionMain {
 
         }catch (InputMismatchException e){
             System.out.println("Please enter integer");
+        }catch (ArithmeticException e){
+            System.out.println(e.getMessage());
         }
 
     }
